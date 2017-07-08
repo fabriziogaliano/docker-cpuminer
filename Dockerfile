@@ -1,5 +1,4 @@
 FROM            ubuntu:14.04
-LABEL           Guillaume J. Charmes <guillaume@charmes.net>
 
 RUN             apt-get update -qq && \
                 apt-get install -qqy automake libcurl4-openssl-dev git make
