@@ -1,4 +1,4 @@
-# docker-cpuminer CRYPTONIGHT ( MONERO [XMR] )
+# Docker-cpuminer CRYPTONIGHT ( MONERO [XMR] )
 Docker image multi-threaded CPU miner for MONER and Other cryptocurrencies
 
 
