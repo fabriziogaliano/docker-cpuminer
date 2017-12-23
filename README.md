@@ -1,5 +1,5 @@
 # docker-cpuminer
-This is a Docker images multi-threaded CPU miner for all the major cryptocurrencies
+Docker image multi-threaded CPU miner for all the major cryptocurrencies
 
 
 # USAGE
