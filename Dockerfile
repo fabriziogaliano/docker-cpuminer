@@ -9,7 +9,7 @@
 #
 
 FROM            ubuntu:16.04
-MAINTAINER      Fabrizio Galiano <fabrizio.galiano@hotmail.com>
+LABEL           Fabrizio Galiano <fabrizio.galiano@hotmail.com>
 
 RUN             apt-get update -qq
 
@@ -28,7 +28,7 @@ RUN             cd cpuminer-multi \
                 && bash ./configure CFLAGS="-O3" \
                 && make
 
-RUN             apt-get clean
+RUN             apt-get -qqy clean
 
 WORKDIR         /cpuminer-multi
 ENTRYPOINT      ["./minerd"]
