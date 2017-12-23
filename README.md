@@ -1,14 +1,31 @@
-# Docker-cpuminer CRYPTONIGHT ( MONERO [XMR] )
+# docker-cpuminer
 Docker image multi-threaded CPU miner for MONER and Other cryptocurrencies
 
 
-# USAGE
-```
-ex1: docker run fabriziogaliano/docker-cpuminer --url xxxx --user xxxx --pass xxxx
+# SCRYPT ( LITECOIN [LTC] / BITCOIN [BTC] / DASH - and other crypto )
 
-ex2: docker run fabriziogaliano/cpuminer -a cryptonight-o stratum+tcp://pool.supportxmr.com:5555 -u 46VepA9vrkhYN5tb2c27KnK4TZZr3vtJ9DErrxRGfrEBUFnwTJHryG6PcYtwaPq92CZ92FNDd5r5iTTy9V6cXxtn4hRPDcz -p w01:fabrikorn555@hotmail.com
+```
+ex1: docker run fabriziogaliano/docker-cpuminer:v1.0.0\
+--algo scrypt/sha256/x11 \
+--url xxxx --user xxxx --pass xxxx
+
+ex2: docker run fabriziogaliano/cpuminer \
+-a scrypt / sha256 / x11 / ecc... -o stratum+tcp://pool.crypto.domain:3333 \
+-u user01 -p password01
 ```
 #
+
+# CRYPTONIGHT ( MONERO [XMR] )
+
+```
+Example01: 
+docker run fabriziogaliano/docker-cpumine:cryptonight \
+-a cryptonight \
+-o stratum+tcp://pool.supportxmr.com:5555 \
+-u 46VepA9vrkhYN5tb2c27KnK4TZZr3vtJ9DErrxRGfrEBUFnwTJHryG6PcYtwaPq92CZ92FNDd5r5iTTy9V6cXxtn4hRPDcz \
+-p w01:fabrikorn555@hotmail.com
+
+```
 
 Username / Password Samples
 ## Standard wallet address (Monero CLI wallet/Monero GUI wallet/MyMonero wallet)
